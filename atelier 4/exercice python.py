@@ -1,9 +1,11 @@
-fichier = open("Table_de_multiplication.txt", "w")
+f= open("table_de_multiplication.txt","w+")
+c=1
+while c!= 10:
+    f.write("table de multiplication de"+" "+str(c)+" "+"est"+"\n")
+    for i in range(0,11):
+       
+        f.write(str(c)+"*"+str(i)+"="+str(c*i)+"\n")
+    c+=1
 
-for i in range(1, 11):
-    fichier.write("table de multiplication de " + str(i) + "\n")
-    for j in range(1, 11):
-        fichier.write(str(i) + " x " + str(j) + " = " + str(i * j) + "\n")
-    fichier.write("\n")
+    
 
-fichier.close()
