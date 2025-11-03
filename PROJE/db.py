@@ -197,4 +197,5 @@ def get_all_borrows(db_name: str = "library.db") -> List[Tuple]:
     ''')
     results = cursor.fetchall()
     conn.close()
+
     return results
